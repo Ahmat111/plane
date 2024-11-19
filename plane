@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самолет</title>
+    <style>
+
+         body {
+            background-image: url(https://cbgd.ask.fm/wallpapers2/073/768/180/992/original/QJmgeDTVR9Q.jpg);
+        }
+    
+
+        .cloud {
+            width: 10px;
+            height: 20px;
+            position: absolute;
+            left: -200px; /* Начальное положение за левым краем */
+            animation: fly 5s linear forwards; /* Анимация полета */
+            
+
+        }
+
+
+        @keyframes fly {
+            0% {
+                left: -200px; /* Начальное положение */
+            }
+            100% {
+                left: calc(100% - 250px); /* Конечное положение */
+            }
+        }
+
+    </style>
+    <body>  
+        <div class="body">
+        <div class="plane">
+        <div class="cloud">
+        <img src="https://www.astronics.com/Power_Motion_Hotspots_Airbus/images/Airbus_A320.png">
+        </div>
+        </div>
+    </body>
+</head>
+</html>
